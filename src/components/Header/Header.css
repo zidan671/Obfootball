@@ -1,0 +1,16 @@
+.header {
+  grid-area: header;
+  background-color: rgb(16, 160, 93);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo img {
+  width: 60px;
+}
