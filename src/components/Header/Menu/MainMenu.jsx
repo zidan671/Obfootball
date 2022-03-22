@@ -1,18 +1,15 @@
+import { NavLink, Link } from 'react-router-dom'
 import './MainMenu.css'
-import Tournaments from './Tournaments/Tournaments';
-import Statistics from './Statistics/Statistics';
-import Players from './Players/Players';
-import Galery from './Galery/Galery';
-import Contacts from './Contacts/Constacts';
 
 function MainMenu(props) {
   return (
     <nav className="menu">
-      <Tournaments/>
-      <Statistics/>
-      <Players/>
-      <Galery/>
-      <Contacts/>
+      <NavLink to="/" className="menu_item">Главная</NavLink>
+      <NavLink to="/tournaments" className="menu_item">Турниры</NavLink>
+      <NavLink to="/statistics" className="menu_item">Статистика</NavLink>
+      <NavLink to="/teams" className="menu_item">Команды</NavLink>
+      <NavLink to="/galery" className="menu_item">Галерея</NavLink>
+      <NavLink to="/contacts" className="menu_item">Контакты</NavLink>
     </nav>
   )
 }

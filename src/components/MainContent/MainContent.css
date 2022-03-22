@@ -2,3 +2,7 @@
   grid-area: main;
   background-color: rgba(202, 199, 199, 0.747);
 }
+
+.main-content img {
+  width: 100%;
+}
